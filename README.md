@@ -13,3 +13,8 @@ From exe
 ~~~bash
 main.exe {path}
 ~~~
+## Compile .exe
+This script use PyInstaller to create the .exe file, you can compile yourself with this command:
+~~~bash
+pyinstaller --onefile .\src\main.py
+~~~
