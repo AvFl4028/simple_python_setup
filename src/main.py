@@ -7,6 +7,7 @@ file_path = args + "/src/main.py"
 def main():
     print("Creating project...")
     os.system(f'python -m venv "{args}\\venv"')
+    os.system(f"git init {args}")
     os.mkdir(args + "/src")
     with open(file_path, "w") as f:
         f.write("""
